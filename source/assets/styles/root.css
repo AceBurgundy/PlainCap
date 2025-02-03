@@ -1,0 +1,149 @@
+@import url("./fonts.css");
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    cursor: default;
+}
+
+button, input[type="file"] {
+    cursor: pointer;
+}
+
+svg {
+    fill: white;
+    pointer-events: none;
+    width: 1rem;
+}
+
+#container {
+    width: 100dvw;
+    height: 100dvh;
+    display: grid;
+    grid-template-rows: 92% 8%;
+    place-items: center;
+    background-color: #212121;
+}
+
+#buttons {
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media screen and (max-height: 480px) and (max-width: 780px) {
+    #container {
+        grid-template-rows: 85% 15%;
+    }
+    #buttons {
+        padding-left: 1rem;
+        padding-right: 3rem;
+    }
+}
+
+video {
+    margin: 0 auto;
+    height: 100%;
+    background-color: black;
+}
+
+button {
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #212121;
+}
+
+#backdrop {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 70%;
+    z-index: 9998;
+    display: none;
+}
+
+#backdrop.active {
+    display: block;
+}
+
+#pause {
+    width: 0.8rem;
+    margin-top: 2.5px;
+}
+
+#microphone-prompt {
+    display: flex;
+    align-items: center;
+}
+
+#microphone {
+    width: fit-content;
+    fill: gray;
+    cursor: pointer;
+}
+
+#microphone-prompt.active > #microphone {
+    fill: red;
+}
+
+#countdown {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-size: 15rem;
+    z-index: 9999;
+    color: white;
+}
+
+select {
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    color: white;
+    width: 100%;
+}
+
+#toasts {
+    height: fit-content;
+    width: fit-content;
+    position: fixed;
+    z-index: 9999;
+    margin: 1rem;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.toast {
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+}

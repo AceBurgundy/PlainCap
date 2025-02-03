@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Recorder by: Sam Adrian P. Sabalo</title>
+    <link rel="stylesheet" href="assets/styles/root.css">
+    <script src="./scripts/script.js" type="module"></script>
+</head>
+<body>
+    <div id="toasts"></div>
+    <div id="container">
+        <video id="video" autoplay></video>
+        <div id="buttons">
+            <button id="start">
+                <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 85" viewBox="0 0 36 36" id="recording-button"><circle cx="18" cy="18" r="18" fill="#fc0000"></circle></svg>
+            </button>
+            <button id="stop">
+                <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 91" viewBox="0 0 36 36" id="stop-button"><path d="M0 0h36v36H0z"></path></svg>
+            </button>
+            <button id="pause" style="display: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 92" viewBox="0 0 27 36" id="pause"><path d="M0 0h9v36H0zM18 0h9v36h-9z"></path></svg>
+            </button>
+            <!-- https://iconscout.com/contributors/zolute/icons -->
+            <div id="microphone-prompt" class="active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" version="1.2" id="microphone"><path d="M12 16c2.206 0 4-1.795 4-4V6c0-2.206-1.794-4-4-4S8 3.794 8 6v6c0 2.205 1.794 4 4 4zm7-4v-2a1 1 0 1 0-2 0v2c0 2.757-2.243 5-5 5s-5-2.243-5-5v-2a1 1 0 1 0-2 0v2c0 3.52 2.613 6.432 6 6.92V20H8a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2h-3v-1.08c3.387-.488 6-3.4 6-6.92z"></path></svg>
+            </div>
+            <select id="sources"></select>
+        </div>
+    </div>
+
+</body>
+</html>

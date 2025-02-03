@@ -1,0 +1,42 @@
+{
+  "name": "simple-recorder",
+  "productName": "SimCor",
+  "version": "1.0.0",
+  "description": "A screen recorder built with nodeJS",
+  "main": "source/index.js",
+  "scripts": {
+    "start": "nodemon --exec electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "test": "mocha test.js",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "watch": "nodemon --exec electron ."
+  },
+  "keywords": [],
+  "author": {
+    "name": "AceBurgundy",
+    "email": "Samadriansabalo99@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.3.10",
+    "electron-squirrel-startup": "^1.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-google": "^0.14.0",
+    "ffmpeg": "^0.0.4",
+    "fs-extra": "^11.1.1",
+    "mocha": "^10.2.0",
+    "simple-recorder": "file:"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.2.1",
+    "@electron-forge/maker-deb": "^6.2.1",
+    "@electron-forge/maker-rpm": "^6.2.1",
+    "@electron-forge/maker-squirrel": "^6.2.1",
+    "@electron-forge/maker-zip": "^6.2.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.2.1",
+    "electron": "^25.3.1",
+    "nodemon": "^3.0.1"
+  }
+}
