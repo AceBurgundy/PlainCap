@@ -1,8 +1,8 @@
 {
-  "name": "simple-recorder",
-  "productName": "SimCor",
+  "name": "plaincap",
+  "productName": "PlainCap",
   "version": "1.0.0",
-  "description": "A screen recorder built with nodeJS",
+  "description": "A simple and quick screen recorder",
   "main": "source/index.js",
   "scripts": {
     "start": "nodemon --exec electron-forge start",
