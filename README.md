@@ -17,7 +17,7 @@
 
 ## 🖥️ Screenshot
 
-*(Insert a screenshot here showing the minimal UI)*
+![UI](image.png)
 
 ---
 
